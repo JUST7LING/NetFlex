@@ -30,5 +30,7 @@
 	
 	<mvc:annotation-driven />
 	<mvc:resources location="/WEB-INF/Asset/" mapping="/asset/**" />
+	
+	<mvc:resources mapping="/asset/**" location="/WEB-INF/Asset/"/>
 
 </beans>
