@@ -30,7 +30,7 @@ color:red;
          <div class="login-wrapper hybrid-login-wrapper">
              
              <div class="nfHeader login-header signupBasicHeader">
-                <a href="../"; >
+                <a href="../"; >  <!-- ; ?  -->
                 <img alt="넷플릭스홈" src="/NetFlex/asset/image/netflexIcon.png" style="width: 199px">                        
                  </a>
              </div>

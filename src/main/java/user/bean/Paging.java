@@ -1,12 +1,8 @@
 package user.bean;
 
 import org.springframework.stereotype.Component;
-
-import lombok.Getter;
-import lombok.Setter;
-
+ 
 @Component
-@Setter @Getter
 public class Paging {
 	private int currentPage; // 현재 페이지
 	private int pageBlock; // 페이지를 몇페이지 단위로 만들건지
@@ -58,4 +54,46 @@ public class Paging {
 		
 		pagingHTML.append("</div>");
 	}
+
+	public int getCurrentPage() {
+		return currentPage;
+	}
+
+	public void setCurrentPage(int currentPage) {
+		this.currentPage = currentPage;
+	}
+
+	public int getPageBlock() {
+		return pageBlock;
+	}
+
+	public void setPageBlock(int pageBlock) {
+		this.pageBlock = pageBlock;
+	}
+
+	public int getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(int pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public int getTotalA() {
+		return totalA;
+	}
+
+	public void setTotalA(int totalA) {
+		this.totalA = totalA;
+	}
+
+	public StringBuffer getPagingHTML() {
+		return pagingHTML;
+	}
+
+	public void setPagingHTML(StringBuffer pagingHTML) {
+		this.pagingHTML = pagingHTML;
+	}
+	
+	
 }
